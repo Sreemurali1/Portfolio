@@ -9,7 +9,7 @@
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-5BB8W2X');</script>
   <!-- End Google Tag Manager -->
-  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -18,7 +18,7 @@
   <meta content="Python, Django, FastAPI, PostgreSQL, Redis, Docker, AI calling, LLMs, Machine Learning, Data Science" name="keywords">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,199 +31,220 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169007209-3"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-169007209-3');
   </script>
-
-
-
-  <!-- =======================================================
-  * Template Name: Personal - v2.1.0
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
-  
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BB8W2X"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <!-- ======= Header ======= -->
-  <header id="header" class="header-tops">
 
+  <!-- ======= Header / Sticky Navbar ======= -->
+  <header id="header">
     <div class="container">
-
       <h1><a href="index.html">Sreemurali Sekar K</a></h1>
-      <h2 style="color:#fff">I'm <span class="typing" style="color:#12D640"></span></h2>
+      
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          <li class="active"><a href="#header"> <span>Home</span></a></li>
-          <li><a href="#about"><span>About</span></a></li>
-          <li><a href="#education"> <span>Education</span></a></li>
-          <li><a href="#experience"> <span>Experience</span></a></li>
-<!--          <li><a href="#projects"> <span>Projects</span></a></li>-->
-          <li><a href="#portfolio"> <span>Projects</span></a></li>
-          <li><a href="#skills"> <span>Skills</span></a></li>
-          <li><a href="https://drive.google.com/file/d/1vVtIALtVN6RyAW3nRjCqM5PrO7Rzhwfh/view?usp=sharing" target="_blank"> <span>Resume</span></a></li>
-          <!-- <li><a href="#links"> <span>Resume & Links</span></a></li> -->
-          <li><a href="#contacts"> <span>Contact</span></a></li>
-
+          <li class="active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contacts">Contact</a></li>
+          <li class="resume-btn"><a href="https://drive.google.com/file/d/1vVtIALtVN6RyAW3nRjCqM5PrO7Rzhwfh/view?usp=sharing" target="_blank">Resume</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
 
-      <div class="social-links">
-          <a href="https://www.linkedin.com/in/sreemurali-sekar-k-84630517a/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/Sreemurali1" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-          <a href="mailto:sreemuralislm@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-          <a href="https://leetcode.com/u/sreemurali/" target="_blank" class="huggingface">
-            <img src="assets\img\leetcode-svgrepo-com.svg" alt="Hugging Face" width="24" height="24">
-          </a>
-
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="container" data-aos="fade-up">
+      <span class="hero-greet font-mono">Hi, my name is</span>
+      <h1>Sreemurali Sekar K</h1>
+      <h2 class="hero-subtitle">I'm a <span class="typing"></span></h2>
+      <p class="hero-desc">
+        Python Developer and Backend/AI Engineer with professional experience building scalable backends, real-time voice AI conversational systems, HRMS platforms, and data workflows using Django, FastAPI, PostgreSQL, Redis, and Docker.
+      </p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn-primary">View Projects</a>
+        <a href="#contacts" class="btn-secondary">Get In Touch</a>
       </div>
 
+      <!-- Metrics Row -->
+      <div class="row metrics-row">
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <div class="glass-panel metric-card">
+            <div class="metric-number">1+ Years</div>
+            <div class="metric-label">Professional backend and AI product development</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+          <div class="glass-panel metric-card">
+            <div class="metric-number">2+ Deployed</div>
+            <div class="metric-label">Scalable AI platforms &amp; conversational voice agents</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-4 mb-sm-0">
+          <div class="glass-panel metric-card">
+            <div class="metric-number">5+ Core</div>
+            <div class="metric-label">Backend REST APIs, microservices, and databases</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <div class="glass-panel metric-card">
+            <div class="metric-number">99.9%</div>
+            <div class="metric-label">Async worker automation and task queue uptime</div>
+          </div>
+        </div>
+      </div>
     </div>
-  </header><!-- End Header -->
+  </section>
+  <!-- End Hero Section -->
 
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
-
-    <!-- ======= About Me ======= -->
-    <div class="about-me container">
-
+    <div class="container" data-aos="fade-up">
       <div class="section-title">
         <h2>About</h2>
       </div>
 
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <img src="assets/img/Profile.jpg" class="img-fluid" alt="">
+      <div class="row align-items-center">
+        <div class="col-lg-4 text-center mb-5 mb-lg-0" data-aos="fade-right">
+          <div class="about-img-wrapper">
+            <img src="assets/img/Profile.jpg" class="img-fluid" alt="Sreemurali Sekar K">
+          </div>
         </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p>Python Developer with 1+ years of professional experience in building scalable backend applications, REST APIs, AI-powered platforms, and data-driven solutions using Python, Django, FastAPI, PostgreSQL, Redis, and Docker. Proven expertise in backend architecture, API development, database design, and AI integration, with hands-on experience delivering enterprise-grade HRMS and voice AI systems.
+        <div class="col-lg-8 content" data-aos="fade-left">
+          <p>
+            I am a Python Developer with professional experience designing, building, and deploying scalable backend systems and AI applications. My core engineering toolkit centers around Python, Django, FastAPI, PostgreSQL, Redis, and Docker.
           </p>
-          <div class="row">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 29 January 2001</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +91 7448810289</li>
-              </ul>
+          <p>
+            I specialize in crafting robust backend architectures, designing optimal relational and vector databases, and integrating Large Language Models (LLMs) to power smart automated solutions. I have hands-on experience building voice AI telecommunications platforms (LiveKit, WebRTC, SIP) and AI biometric authentication systems.
+          </p>
+          
+          <ul class="details-list">
+            <li><i class="bx bx-chevron-right"></i> <strong>Location:</strong> Chennai, Tamil Nadu</li>
+            <li><i class="bx bx-chevron-right"></i> <strong>Email:</strong> sreemuralislm@gmail.com</li>
+            <li><i class="bx bx-chevron-right"></i> <strong>Phone:</strong> +91 7448810289</li>
+            <li><i class="bx bx-chevron-right"></i> <strong>Availability:</strong> Open to Opportunities</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Interests / Focus Areas -->
+      <div class="interests container-fluid px-0">
+        <h3 class="subsection-title">Core Focus Areas</h3>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="icon-box">
+              <i class="ri-global-line" style="color: #64ffda;"></i>
+               <h3>Software Development</h3>
             </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Chennai, Tamil Nadu</li>
-                <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> sreemuralislm@gmail.com</li>
-              </ul>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="icon-box">
+              <i class="ri-database-2-line" style="color: #64ffda;"></i>
+              <h3>Machine Learning</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="icon-box">
+              <i class="ri-camera-3-line" style="color: #64ffda;"></i>
+              <h3>Computer Vision</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="icon-box">
+              <i class="ri-english-input" style="color: #64ffda;"></i>
+              <h3>Natural Language Processing</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="icon-box">
+              <i class="ri-code-s-slash-fill" style="color: #64ffda;"></i>
+              <h3>Generative AI</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="icon-box">
+              <i class="ri-bar-chart-box-line" style="color: #64ffda;"></i>
+              <h3>Data Visualization</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="icon-box">
+              <i class="ri-file-list-3-line" style="color: #64ffda;"></i>
+              <h3>Algorithms &amp; DS</h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="icon-box">
+              <i class="ri-image-line" style="color: #64ffda;"></i>
+              <h3>Image Processing</h3>
             </div>
           </div>
         </div>
       </div>
-
-    </div><!-- End About Me -->
-
-    <!-- ======= Interests ======= -->
-    <div class="interests container">
-
-      <div class="section-title">
-        <h2>Interests</h2>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <i class="ri-global-line" style="color: #ffbb2c;"></i>
-            <h3>Software Development</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-database-2-line" style="color: #5578ff;"></i>
-            <h3>Machine Learning</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-          <div class="icon-box">
-            <i class="ri-camera-3-line" style="color: #e80368;"></i>
-            <h3>Computer Vision</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-          <div class="icon-box">
-            <i class="ri-english-input" style="color: #1c7d32;"></i>
-            <h3>Natural Language Processing</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-code-s-slash-fill" style="color: #28a745;"></i>
-            <h3>Generative AI </h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-bar-chart-box-line" style="color: #f1081f;"></i>
-            <h3>Visualization</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-file-list-3-line" style="color: #47aeff;"></i>
-            <h3>Algorithms</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 mt-4">
-          <div class="icon-box">
-            <i class="ri-image-line" style="color: #ffc107;"></i>
-            <h3>Image Processing</h3>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End Interests -->
-  </section><!-- End About Section -->
-
-
+    </div>
+  </section>
+  <!-- End About Section -->
 
   <!-- ======= Education Section ======= -->
-  <section id="education" class="services">
-    <div class="container">
+  <section id="education" class="education">
+    <div class="container" data-aos="fade-up">
       <div class="section-title">
         <h2>Education</h2>
       </div>
+      
       <div class="row">
-        <div class="col-lg-12" data-aos="fade-up" style="display: inline-block;">
-
-
-            <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-              <img src="assets/img/education/periyar_university.jpg" class="img-fluid" alt="Periyar University Logo">
-              <p style="text-align:left;color:#fff;padding: 5px 10px;"><strong>Master's in Data Science</strong></p>
-              <p style="text-align:left;color:#fff;padding: 0px 10px;margin-bottom: 5px;">Periyar University, Salem</p>
-              <h5 style="text-align:left;padding: 0px 10px;margin-bottom: 5px;">July 2022 - May 2024</h5>
-              <h6 style="text-align:left;color:#12d640;padding: 0px 10px;margin-bottom: 5px;">CGPA: 8.026</h6>
-              <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Relevant Coursework</h6>
-              <ul style="text-align:left;color:#fff;">
+        <div class="col-md-6 mb-4">
+          <div class="glass-panel education-card">
+            <div class="education-card-header">
+              <img src="assets/img/education/periyar_university.jpg" alt="Periyar University Logo">
+            </div>
+            <div class="education-degree-strip">
+              <h3>M.Sc in Data Science</h3>
+            </div>
+            <div class="education-card-body">
+              <div class="college-name">Periyar University, Salem</div>
+              <div class="year font-mono">July 2022 - May 2024</div>
+              <div class="gpa">CGPA: 8.026</div>
+              <div class="coursework-title">Relevant Coursework:</div>
+              <ul>
                 <li>OCI Data Science Professional</li>
                 <li>Machine Learning with Python</li>
                 <li>NLP in TensorFlow</li>
               </ul>
             </div>
-            <div class="col-md-4 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="padding:0px 0px;padding-bottom: 5px;display: inline-block;">
-              <img src="assets/img/education/mahendra1.jpg" class="img-fluid" alt="Mahendra Arts and Science College Logo">
-              <p style="text-align:left;color:#fff;padding: 5px 10px;"><strong>Bachelor of Computer Application</strong></p>
-              <p style="text-align:left;color:#fff;padding: 0px 10px;margin-bottom: 5px;">Mahendra Arts &amp; Science College, Namakkal</p>
-              <h5 style="text-align:left;padding: 0px 10px;margin-bottom: 5px;">July 2018 - May 2021</h5>
-              <h6 style="text-align:left;color:#12d640;padding: 0px 10px;margin-bottom: 5px;">CGPA: 6.4</h6>
-              <h6 style="text-align:left;color:#fff;padding: 0px 10px;">Relevant Coursework</h6>
-              <ul style="text-align:left;color:#fff;">
+          </div>
+        </div>
+        
+        <div class="col-md-6 mb-4">
+          <div class="glass-panel education-card">
+            <div class="education-card-header">
+              <img src="assets/img/education/mahendra1.jpg" alt="Mahendra Arts and Science College Logo">
+            </div>
+            <div class="education-degree-strip">
+              <h3>Bachelor of Computer Applications.</h3>
+            </div>
+            <div class="education-card-body">
+              <div class="college-name">Mahendra Arts &amp; Science College, Namakkal</div>
+              <div class="year font-mono">July 2018 - May 2021</div>
+              <div class="gpa">CGPA: 6.4</div>
+              <div class="coursework-title">Relevant Coursework:</div>
+              <ul>
                 <li>Database Management Systems</li>
                 <li>Algorithms &amp; Optimization for Big Data</li>
                 <li>Intermediate Python</li>
@@ -233,249 +254,272 @@
         </div>
       </div>
 
+      <!-- Online Certifications -->
+      <div class="certifications-section">
+        <h3 class="subsection-title">Online Certifications</h3>
+        <div class="row certification-grid">
+          <!-- 1. Oracle Certified GenAI Professional -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="glass-panel certification-card">
+              <div class="certification-card-header">
+                <img src="assets/img/certification/oci.jpg" alt="Oracle Certified GenAI Professional">
+              </div>
+              <div class="certification-card-body">
+                <h4>Oracle Certified GenAI Professional</h4>
+                <a href="https://education.oracle.com/" target="_blank" class="cert-link"><i class="bx bx-link-external"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
 
-    <div class="portfolio">
-    <div class="container">
-      <div class="section-title">
-        <h2>Online Certification</h2>
-      </div>
+          <!-- 2. Oracle Certified Data Science Professional -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="glass-panel certification-card">
+              <div class="certification-card-header">
+                <img src="assets/img/certification/oci.jpg" alt="Oracle Certified Data Science Professional">
+              </div>
+              <div class="certification-card-body">
+                <h4>Oracle Certified Data Science Professional</h4>
+                <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=DA6FCED54F49D825C5E3F7F4F7D39C26E8D581D1B92451F600364DCA9B84180A" target="_blank" class="cert-link"><i class="bx bx-link-external"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
 
-      <style>
-        .certification-grid .portfolio-wrap {
-          height: 160px;
-          background: #fff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .certification-grid .portfolio-wrap img {
-          max-height: 100%;
-          max-width: 100%;
-          object-fit: contain;
-          padding: 15px;
-        }
-      </style>
-      <div class="row certification-grid">
+          <!-- 3. Oracle Certified Machine Learning Associate -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="glass-panel certification-card">
+              <div class="certification-card-header">
+                <img src="assets/img/certification/oci.jpg" alt="Oracle Certified Machine Learning Associate">
+              </div>
+              <div class="certification-card-body">
+                <h4>Oracle Certified Machine Learning Associate</h4>
+                <a href="https://education.oracle.com/" target="_blank" class="cert-link"><i class="bx bx-link-external"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
 
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/oci.jpg" class="img-fluid" alt="Oracle Certified GenAI Professional">
-            <div class="portfolio-info">
-              <h4>Oracle Certified GenAI Professional</h4>
-              <div class="portfolio-links">
-                <a href="https://education.oracle.com/" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
+          <!-- 4. IBM AI Engineer -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="glass-panel certification-card">
+              <div class="certification-card-header">
+                <img src="assets/img/certification/ibm.jpg" alt="IBM AI Engineer">
+              </div>
+              <div class="certification-card-body">
+                <h4>IBM AI Engineer</h4>
+                <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/BQZL2NDMCRJE" target="_blank" class="cert-link"><i class="bx bx-link-external"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. NLP in TensorFlow -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="glass-panel certification-card">
+              <div class="certification-card-header">
+                <img src="assets/img/certification/dai.jpg" alt="NLP in TensorFlow">
+              </div>
+              <div class="certification-card-body">
+                <h4>Natural Language Processing in TensorFlow</h4>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/7YC24Y93VPYQ" target="_blank" class="cert-link"><i class="bx bx-link-external"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Data Science for Engineers -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="glass-panel certification-card">
+              <div class="certification-card-header">
+                <img src="assets/img/certification/nptel.jpeg" alt="Data Science for Engineers">
+              </div>
+              <div class="certification-card-body">
+                <h4>Data Science for Engineers</h4>
+                <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS17S3554076203118518" target="_blank" class="cert-link"><i class="bx bx-link-external"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Fundamentals of Deep Learning (Nvidia) -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="glass-panel certification-card">
+              <div class="certification-card-header">
+                <img src="assets/img/certification/nvidia.png" alt="Fundamentals of Deep Learning">
+              </div>
+              <div class="certification-card-body">
+                <h4>Workshop/Fundamentals of Deep Learning</h4>
+                <a href="https://learn.nvidia.com/certificates?id=79035a668e7642c7894657fb0df5389e" target="_blank" class="cert-link"><i class="bx bx-link-external"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Deep Learning Models with TensorFlow (IBM) -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="glass-panel certification-card">
+              <div class="certification-card-header">
+                <img src="assets/img/certification/ibm.jpg" alt="Deep Learning TensorFlow">
+              </div>
+              <div class="certification-card-body">
+                <h4>Building Deep Learning Models with TensorFlow</h4>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/8CCGP86ZAZZ6" target="_blank" class="cert-link"><i class="bx bx-link-external"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Machine Learning with Python Offered by IBM -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="glass-panel certification-card">
+              <div class="certification-card-header">
+                <img src="assets/img/certification/ibm.jpg" alt="Machine Learning Offered by IBM">
+              </div>
+              <div class="certification-card-body">
+                <h4>Machine Learning with Python Offered by IBM</h4>
+                <a href="https://www.coursera.org/account/accomplishments/verify/4NX8HC3DNTRH" target="_blank" class="cert-link"><i class="bx bx-link-external"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. Datacamp Intermediate Python -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="glass-panel certification-card">
+              <div class="certification-card-header">
+                <img src="assets/img/certification/dcs.png" alt="Intermediate Python">
+              </div>
+              <div class="certification-card-body">
+                <h4>Intermediate Python</h4>
+                <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/65f6d0edbca4acebca52ccfe5556bba0002d63b4" target="_blank" class="cert-link"><i class="bx bx-link-external"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11. Datacamp Intermediate SQL Queries -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="glass-panel certification-card">
+              <div class="certification-card-header">
+                <img src="assets/img/certification/dcs.png" alt="Intermediate SQL Queries">
+              </div>
+              <div class="certification-card-body">
+                <h4>Intermediate SQL Queries</h4>
+                <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/36380caa75382fc722652167ee1d441135c5a921" target="_blank" class="cert-link"><i class="bx bx-link-external"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12. Imperial College London Linear Algebra -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="glass-panel certification-card">
+              <div class="certification-card-header">
+                <img src="assets/img/certification/icl.png" alt="Linear Algebra">
+              </div>
+              <div class="certification-card-body">
+                <h4>Mathematics for Machine Learning: Linear Algebra</h4>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/JSHGLSYSXW8V" target="_blank" class="cert-link"><i class="bx bx-link-external"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 13. Imperial College London Multivariate Calculus -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="glass-panel certification-card">
+              <div class="certification-card-header">
+                <img src="assets/img/certification/icl.png" alt="Multivariate Calculus">
+              </div>
+              <div class="certification-card-body">
+                <h4>Mathematics for Machine Learning: Multivariate Calculus</h4>
+                <a href="https://www.coursera.org/account/accomplishments/certificate/VLL6G8HUYR6K" target="_blank" class="cert-link"><i class="bx bx-link-external"></i> View Certificate</a>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/oci.jpg" class="img-fluid" alt="Oracle Certified Data Science Professional">
-            <div class="portfolio-info">
-              <h4>Oracle Certified Data Science Professional</h4>
-              <div class="portfolio-links">
-                <a href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=DA6FCED54F49D825C5E3F7F4F7D39C26E8D581D1B92451F600364DCA9B84180A" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/oci.jpg" class="img-fluid" alt="Oracle Certified Machine Learning Associate">
-            <div class="portfolio-info">
-              <h4>Oracle Certified Machine Learning Associate</h4>
-              <div class="portfolio-links">
-                <a href="https://education.oracle.com/" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/ibm.jpg" class="img-fluid" alt="IBM AI Engineer">
-            <div class="portfolio-info">
-              <h4>IBM AI Engineer</h4>
-              <div class="portfolio-links">
-                <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/BQZL2NDMCRJE" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/dai.jpg" class="img-fluid" alt="NLP in TensorFlow">
-            <div class="portfolio-info">
-              <h4>Natural Language Processing in TensorFlow</h4>
-              <div class="portfolio-links">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/7YC24Y93VPYQ" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/nptel.jpeg" class="img-fluid" alt="Data Science for Engineers">
-            <div class="portfolio-info">
-              <h4>Data Science for Engineers</h4>
-              <div class="portfolio-links">
-                <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS17S3554076203118518" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/nvidia.png" class="img-fluid" alt="Fundamentals of Deep Learning">
-            <div class="portfolio-info">
-              <h4>Workshop/Fundamentals of Deep Learning</h4>
-              <div class="portfolio-links">
-                <a href="https://learn.nvidia.com/certificates?id=79035a668e7642c7894657fb0df5389e" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/ibm.jpg" class="img-fluid" alt="Deep Learning TensorFlow">
-            <div class="portfolio-info">
-              <h4>Building Deep Learning Models with TensorFlow</h4>
-              <div class="portfolio-links">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/8CCGP86ZAZZ6" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/ibm.jpg" class="img-fluid" alt="Machine Learning Offered by IBM">
-            <div class="portfolio-info">
-              <h4>Machine Learning with Python Offered by IBM</h4>
-              <div class="portfolio-links">
-                <a href="https://www.coursera.org/account/accomplishments/verify/4NX8HC3DNTRH" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/dcs.png" class="img-fluid" alt="Intermediate Python">
-            <div class="portfolio-info">
-              <h4>Intermediate Python</h4>
-              <div class="portfolio-links">
-                <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/65f6d0edbca4acebca52ccfe5556bba0002d63b4" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/dcs.png" class="img-fluid" alt="Intermediate SQL Queries">
-            <div class="portfolio-info">
-              <h4>Intermediate SQL Queries</h4>
-              <div class="portfolio-links">
-                <a href="https://www.datacamp.com/completed/statement-of-accomplishment/course/36380caa75382fc722652167ee1d441135c5a921" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/icl.png" class="img-fluid" alt="Linear Algebra">
-            <div class="portfolio-info">
-              <h4>Mathematics for Machine Learning: Linear Algebra</h4>
-              <div class="portfolio-links">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/JSHGLSYSXW8V" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="portfolio-wrap">
-            <img src="assets/img/certification/icl.png" class="img-fluid" alt="Multivariate Calculus">
-            <div class="portfolio-info">
-              <h4>Mathematics for Machine Learning: Multivariate Calculus</h4>
-              <div class="portfolio-links">
-                <a href="https://www.coursera.org/account/accomplishments/certificate/VLL6G8HUYR6K" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
-    </div>
-
   </section>
   <!-- End Education Section -->
 
-
-
-  <!-- Start Experience Section -->
-
-  <section id="experience" class="services">
-    <div class="container">
+  <!-- ======= Experience Section ======= -->
+  <section id="experience" class="experience">
+    <div class="container" data-aos="fade-up">
       <div class="section-title">
         <h2>Experience</h2>
       </div>
-      <div class="row">
-          <div class="col-lg-12" data-aos="fade-up">
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://thaagam.org/" target="_blank" style="color:#12d640">Thaagam Foundation</a><br> </h4>
-                <h5 style="text-align:left;">June 2025 - Present</h5>
-                <p style="text-align:left;color:#fff"><em>Python Developer (AI)</em></p>
-                <ul style="text-align:left;">
-                  <li><strong>AI Calling Platform:</strong> Developed an AI-powered voice calling platform using Django, LiveKit, Asterisk, WebRTC, and Google Gemini, enabling real-time conversational AI, SIP telephony, multilingual speech-to-text, batch calling, credit-based billing, and automated WhatsApp/email follow-ups with multi-tenant support.</li>
-                  <li>Designed and implemented a scalable backend architecture using WebSockets, Celery, Redis, PostgreSQL, and Docker, powering intelligent voice agents, real-time dashboards, and automated customer communication workflows at scale.</li>
-                  <li><strong>HRMS Platform:</strong> Built a scalable full-stack HRMS solution using Django, DRF, PostgreSQL, and FaceNet (PyTorch), featuring AI-driven biometric attendance, modular performance management, automated payroll processing, and secure JWT-based authentication.</li>
-                </ul>
-              </div>
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://www.bostonindia.in/default.aspx" target="_blank" style="color:#12d640">Boston IT Solutions</a><br> </h4>
-                <h5 style="text-align:left;">February 2024 - May 2024</h5>
-                <p style="text-align:left;color:#fff"><em>Data Science Intern</em></p>
-                <ul style="text-align:left;">
-                  <li>Developed and deployed a multilingual chatbot using large language models (LLMs), improving customer engagement and reducing query handling time by 35%.</li>
-                  <li>Engineered a document detail extraction system using zero-shot learning techniques, streamlining workflows and improving document analysis accuracy by 40%.</li>
-                  <li>Built and fine-tuned a language translation model for English–Malay conversion, enhancing translation efficiency and output quality by 25%.</li>
-                  <li>Utilized Python, Django, and Hugging Face Transformers for model development, fine-tuning, and deployment.</li>
-                </ul>
-              </div>
-              <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-                <h4 style="text-align:left;"><a href="https://www.smardtv.com/" target="_blank" style="color:#12d640">SmardTV Technologies</a><br> </h4>
-                <h5 style="text-align:left;">July 2023</h5>
-                <p style="text-align:left;color:#fff"><em>Python Developer Intern</em></p>
-                <ul style="text-align:left;">
-                  <li>Developed and deployed an internal database management tool for the Customer Service Centre, streamlining data access and reducing query response time by 40%.</li>
-                  <li>Engineered a robust data management system to enable efficient customer data retrieval, analysis, and updates, resulting in a 30% improvement in issue resolution rate.</li>
-                  <li>Built backend workflows using Python, Django, and SQL to support reliable data processing and customer service operations.</li>
-                </ul>
-              </div>
+
+      <div class="experience-timeline">
+        <!-- Experience Item 1: Thaagam Foundation -->
+        <div class="experience-item" data-aos="fade-up">
+          <div class="experience-node"></div>
+          <div class="glass-panel experience-card-body">
+            <h4><a href="https://thaagam.org/" target="_blank">Thaagam Foundation</a></h4>
+            <div class="experience-role">Python Developer (AI)</div>
+            <div class="experience-date font-mono">June 2025 - Present | Chennai, Tamil Nadu</div>
+            <ul>
+              <li><strong>AI Calling Platform:</strong> Developed an AI-powered voice calling platform using Django, LiveKit, Asterisk, WebRTC, and Google Gemini, enabling real-time conversational AI, SIP telephony, multilingual speech-to-text, batch calling, credit-based billing, and automated WhatsApp/email follow-ups with multi-tenant support.</li>
+              <li>Designed and implemented a scalable backend architecture using WebSockets, Celery, Redis, PostgreSQL, and Docker, powering intelligent voice agents, real-time dashboards, and automated customer communication workflows at scale.</li>
+              <li><strong>HRMS Platform:</strong> Built a scalable full-stack HRMS solution using Django, DRF, PostgreSQL, and FaceNet (PyTorch), featuring AI-driven biometric attendance, modular performance management, automated payroll processing, and secure JWT-based authentication.</li>
+            </ul>
+            <div class="experience-tags">
+              <span>Python</span>
+              <span>Django</span>
+              <span>FastAPI</span>
+              <span>LiveKit</span>
+              <span>WebSockets</span>
+              <span>Celery</span>
+              <span>Redis</span>
+              <span>PostgreSQL</span>
+              <span>PyTorch</span>
+              <span>Docker</span>
+            </div>
           </div>
         </div>
+
+        <!-- Experience Item 2: Boston IT Solutions -->
+        <div class="experience-item" data-aos="fade-up">
+          <div class="experience-node"></div>
+          <div class="glass-panel experience-card-body">
+            <h4><a href="https://www.bostonindia.in/default.aspx" target="_blank">Boston IT Solutions</a></h4>
+            <div class="experience-role">Data Science Intern</div>
+            <div class="experience-date font-mono">February 2024 - May 2024 | Chennai, Tamil Nadu</div>
+            <ul>
+              <li>Developed and deployed a multilingual chatbot using large language models (LLMs), improving customer engagement and reducing query handling time by 35%.</li>
+              <li>Engineered a document detail extraction system using zero-shot learning techniques, streamlining workflows and improving document analysis accuracy by 40%.</li>
+              <li>Built and fine-tuned a language translation model for English–Malay conversion, enhancing translation efficiency and output quality by 25%.</li>
+              <li>Utilized Python, Django, and Hugging Face Transformers for model development, fine-tuning, and deployment.</li>
+            </ul>
+            <div class="experience-tags">
+              <span>Python</span>
+              <span>Django</span>
+              <span>LLMs</span>
+              <span>Hugging Face</span>
+              <span>NLP</span>
+              <span>Zero-Shot Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Item 3: SmardTV Technologies -->
+        <div class="experience-item" data-aos="fade-up">
+          <div class="experience-node"></div>
+          <div class="glass-panel experience-card-body">
+            <h4><a href="https://www.smardtv.com/" target="_blank">SmardTV Technologies</a></h4>
+            <div class="experience-role">Python Developer Intern</div>
+            <div class="experience-date font-mono">July 2023 | Chennai, Tamil Nadu</div>
+            <ul>
+              <li>Developed and deployed an internal database management tool for the Customer Service Centre, streamlining data access and reducing query response time by 40%.</li>
+              <li>Engineered a robust data management system to enable efficient customer data retrieval, analysis, and updates, resulting in a 30% improvement in issue resolution rate.</li>
+              <li>Built backend workflows using Python, Django, and SQL to support reliable data processing and customer service operations.</li>
+            </ul>
+            <div class="experience-tags">
+              <span>Python</span>
+              <span>Django</span>
+              <span>SQL</span>
+              <span>Database Management</span>
+              <span>Backend Workflows</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-
   <!-- End Experience Section -->
 
-
-
-  <!-- Start Project Section -->
+  <!-- ======= Project Section ======= -->
   <section id="portfolio" class="portfolio">
-    <div class="container">
-
+    <div class="container" data-aos="fade-up">
       <div class="section-title">
         <h2>Projects</h2>
       </div>
@@ -491,242 +535,480 @@
       </div>
 
       <div class="row portfolio-container">
-
+        <!-- Project: Voixo AI -->
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Quizify: AI-Powered Assessments</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/gan.jpg" class="img-fluid" alt="Quizify Assessment Tool">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
+          <div class="glass-panel portfolio-card">
+            <div class="portfolio-card-top">
+              <i class="bx bx-folder folder-icon"></i>
+              <div class="project-links">
+                <a href="https://voixoai.m7corporation.com/" target="_blank" title="Live Site"><i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+            <h3><a href="https://voixoai.m7corporation.com/" target="_blank">Voixo AI: Conversational Voice Platform</a></h3>
+            <img src="assets/img/project/voixo.png" class="project-img" alt="Voixo AI Voice Platform">
+            <p class="project-desc">Real-time voice agent platform integrating SIP telephony, WebRTC, LiveKit, Google Gemini, and Celery workflow automation.</p>
+            <ul class="portfolio-tech-list">
+              <li>Python</li>
+              <li>Django</li>
+              <li>LiveKit</li>
+              <li>WebRTC</li>
+              <li>Gemini</li>
+              <li>Celery</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project: M7 HRMS -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="glass-panel portfolio-card">
+            <div class="portfolio-card-top">
+              <i class="bx bx-folder folder-icon"></i>
+              <div class="project-links">
+                <a href="https://hrms.m7corporation.com/" target="_blank" title="Live Site"><i class="bx bx-link-external"></i></a>
+              </div>
+            </div>
+            <h3><a href="https://hrms.m7corporation.com/" target="_blank">M7 HRMS: AI Biometric Platform</a></h3>
+            <img src="assets/img/project/hrms.png" class="project-img" alt="M7 HRMS Biometric Platform">
+            <p class="project-desc">Human resource portal with AI face recognition biometric attendance, automated payroll, and secure JWT auth.</p>
+            <ul class="portfolio-tech-list">
+              <li>Python</li>
+              <li>Django</li>
+              <li>DRF</li>
+              <li>FaceNet</li>
+              <li>PyTorch</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 1: Quizify -->
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="glass-panel portfolio-card">
+            <div class="portfolio-card-top">
+              <i class="bx bx-folder folder-icon"></i>
+              <div class="project-links">
                 <a href="projects/quizify.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
               </div>
             </div>
+            <h3><a href="projects/quizify.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox">Quizify: AI Assessments</a></h3>
+            <img src="assets/img/project/gan.jpg" class="project-img" alt="Quizify Assessment Tool">
+            <p class="project-desc">AI-powered assessment platform designed to automate quiz generation and candidate evaluation using LLMs.</p>
+            <ul class="portfolio-tech-list">
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>LLMs</li>
+              <li>FAISS</li>
+              <li>React</li>
+            </ul>
           </div>
         </div>
 
+        <!-- Project 2: Crew AI -->
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Crew AI: Smart Scheduling</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/crewai.png" class="img-fluid" alt="Crew AI Task Prioritization & Scheduling">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
+          <div class="glass-panel portfolio-card">
+            <div class="portfolio-card-top">
+              <i class="bx bx-folder folder-icon"></i>
+              <div class="project-links">
                 <a href="projects/crewai.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
               </div>
             </div>
+            <h3><a href="projects/crewai.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox">Crew AI: Smart Scheduling</a></h3>
+            <img src="assets/img/project/crewai.png" class="project-img" alt="Crew AI Scheduling">
+            <p class="project-desc">Intelligent tasks scheduling agent prioritizing employee workflows based on automated rules.</p>
+            <ul class="portfolio-tech-list">
+              <li>CrewAI</li>
+              <li>Python</li>
+              <li>Agentic Workflows</li>
+              <li>LangChain</li>
+            </ul>
           </div>
         </div>
 
+        <!-- Project 3: Deepfake Face Detection -->
         <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4>Deepfake Face Detection</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/ml.jpg" class="img-fluid" alt="Deepfake Face Detection">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
+          <div class="glass-panel portfolio-card">
+            <div class="portfolio-card-top">
+              <i class="bx bx-folder folder-icon"></i>
+              <div class="project-links">
                 <a href="projects/deep.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
               </div>
             </div>
+            <h3><a href="projects/deep.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox">Deepfake Face Detection</a></h3>
+            <img src="assets/img/project/ml.jpg" class="project-img" alt="Deepfake Face Detection">
+            <p class="project-desc">Computer Vision solution utilizing deep convolutional networks to identify anomalies in synthetic facial frames.</p>
+            <ul class="portfolio-tech-list">
+              <li>Python</li>
+              <li>PyTorch</li>
+              <li>CNN</li>
+              <li>OpenCV</li>
+              <li>Flask</li>
+            </ul>
           </div>
         </div>
 
+        <!-- Project 4: AI-Vista Pro -->
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>AI-Vista Pro</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/resume.jpg" class="img-fluid" alt="AI-Vista Pro">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
+          <div class="glass-panel portfolio-card">
+            <div class="portfolio-card-top">
+              <i class="bx bx-folder folder-icon"></i>
+              <div class="project-links">
                 <a href="projects/AI-Vista.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
               </div>
             </div>
+            <h3><a href="projects/AI-Vista.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox">AI-Vista Pro</a></h3>
+            <img src="assets/img/project/resume.jpg" class="project-img" alt="AI-Vista Pro">
+            <p class="project-desc">Intelligent document parser extracting structure, tags, and summary data using OCR and translation models.</p>
+            <ul class="portfolio-tech-list">
+              <li>Python</li>
+              <li>Django</li>
+              <li>Hugging Face</li>
+              <li>OCR</li>
+            </ul>
           </div>
         </div>
 
+        <!-- Project 5: Legal Mind -->
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Legal Mind</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/recommender.jpg" class="img-fluid" alt="Legal Mind">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
+          <div class="glass-panel portfolio-card">
+            <div class="portfolio-card-top">
+              <i class="bx bx-folder folder-icon"></i>
+              <div class="project-links">
                 <a href="projects/legal.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
               </div>
             </div>
+            <h3><a href="projects/legal.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox">Legal Mind</a></h3>
+            <img src="assets/img/project/recommender.jpg" class="project-img" alt="Legal Mind">
+            <p class="project-desc">Semantic search assistant for law documents running embedding search over legal precedents.</p>
+            <ul class="portfolio-tech-list">
+              <li>Python</li>
+              <li>Qdrant</li>
+              <li>SentenceTransformers</li>
+              <li>FastAPI</li>
+            </ul>
           </div>
         </div>
 
+        <!-- Project 6: Lesson Planner -->
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <center><h4>Lesson Planner</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="Lesson Planner">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
+          <div class="glass-panel portfolio-card">
+            <div class="portfolio-card-top">
+              <i class="bx bx-folder folder-icon"></i>
+              <div class="project-links">
                 <a href="projects/lesson.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
               </div>
             </div>
+            <h3><a href="projects/lesson.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox">Lesson Planner</a></h3>
+            <img src="assets/img/project/vdg.jpg" class="project-img" alt="Lesson Planner">
+            <p class="project-desc">AI curriculum helper that structures modular class plans and resources based on query inputs.</p>
+            <ul class="portfolio-tech-list">
+              <li>Python</li>
+              <li>OpenAI API</li>
+              <li>FastAPI</li>
+              <li>React</li>
+            </ul>
           </div>
         </div>
 
+        <!-- Project 7: Data Retrieval Using Python -->
         <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4>Data Retrieval Using Python</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/todo.jpg" class="img-fluid" alt="Data Retrieval Tool">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
+          <div class="glass-panel portfolio-card">
+            <div class="portfolio-card-top">
+              <i class="bx bx-folder folder-icon"></i>
+              <div class="project-links">
                 <a href="projects/data.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
               </div>
             </div>
+            <h3><a href="projects/data.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox">Data Retrieval Tool</a></h3>
+            <img src="assets/img/project/todo.jpg" class="project-img" alt="Data Retrieval Tool">
+            <p class="project-desc">Automated database query organizer making direct ETL and dashboard sync pipelines for customer service agents.</p>
+            <ul class="portfolio-tech-list">
+              <li>Python</li>
+              <li>SQL</li>
+              <li>Django</li>
+              <li>PostgreSQL</li>
+            </ul>
           </div>
         </div>
 
+        <!-- Project 8: Video Description Generator -->
         <div class="col-lg-4 col-md-6 portfolio-item filter-project">
-          <center><h4>Video Description Generator</h4></center>
-          <div class="portfolio-wrap">
-            <img src="assets/img/project/vdg.jpg" class="img-fluid" alt="Video Description Generator">
-            <div class="portfolio-info">
-              <div class="portfolio-links">
+          <div class="glass-panel portfolio-card">
+            <div class="portfolio-card-top">
+              <i class="bx bx-folder folder-icon"></i>
+              <div class="project-links">
                 <a href="projects/vdg.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox" title="Project Details"><i class="bx bx-info-circle"></i></a>
+              </div>
+            </div>
+            <h3><a href="projects/vdg.html" data-gall="portfolioDetailsGallery" data-vbtype="iframe" class="venobox">Video Description Gen</a></h3>
+            <img src="assets/img/project/vdg.jpg" class="project-img" alt="Video Description Generator">
+            <p class="project-desc">Generates textual descriptions, metadata tags, and transcripts for video files using generative models.</p>
+            <ul class="portfolio-tech-list">
+              <li>Python</li>
+              <li>Gemini Multimodal</li>
+              <li>Whisper API</li>
+              <li>FastAPI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Project Section -->
+
+  <!-- ======= Skills Section ======= -->
+  <section id="skills" class="skills">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="row">
+        <!-- Languages & Databases -->
+        <div class="col-md-6 mb-4">
+          <div class="glass-panel skills-card">
+            <h4>Languages &amp; Databases</h4>
+            <div class="skills-capsules-grid">
+              <div class="skill-capsule">
+                <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="Python Logo">
+                <span>Python</span>
+              </div>
+              <div class="skill-capsule">
+                <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" alt="PostgreSQL Logo">
+                <span>PostgreSQL</span>
+              </div>
+              <div class="skill-capsule">
+                <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="MongoDB Logo">
+                <span>MongoDB</span>
+              </div>
+              <div class="skill-capsule">
+                <img src="https://www.vectorlogo.zone/logos/redis/redis-icon.svg" alt="Redis Logo">
+                <span>Redis</span>
+              </div>
+              <div class="skill-capsule text-only-capsule">
+                <span>SQL</span>
               </div>
             </div>
           </div>
         </div>
 
-      </div>
-    </div>
-  </section>
-
-  <!-- End Project Section -->
-
-
-
-  <!-- Start Skills Section -->
-
-  <section id="skills" class="services">
-    <div class="container">
-      <div class="section-title">
-        <h2>Skills</h2>
-      </div>      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-            <h4 style="text-align:left;color:#09203a">Languages &amp; Databases</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python Logo" height="50" width="150">
-                  <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-horizontal.svg" alt="PostgreSQL Logo" height="60" width="150">
-                  <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg" alt="MongoDB Logo" height="60" width="130">
-                  <img src="https://www.vectorlogo.zone/logos/redis/redis-ar21.svg" alt="Redis Logo" height="60" width="130">
-                </p>
+        <!-- Backend & APIs -->
+        <div class="col-md-6 mb-4">
+          <div class="glass-panel skills-card">
+            <h4>Backend &amp; APIs</h4>
+            <div class="skills-capsules-grid">
+              <div class="skill-capsule">
+                <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-icon.svg" alt="Django Logo">
+                <span>Django / DRF</span>
+              </div>
+              <div class="skill-capsule">
+                <img src="https://fastapi.tiangolo.com/img/favicon.png" alt="FastAPI Logo">
+                <span>FastAPI</span>
+              </div>
+              <div class="skill-capsule">
+                <img src="https://www.vectorlogo.zone/logos/palletsprojects_flask/palletsprojects_flask-icon.svg" alt="Flask Logo">
+                <span>Flask</span>
+              </div>
+              <div class="skill-capsule text-only-capsule">
+                <span>REST APIs</span>
+              </div>
+              <div class="skill-capsule text-only-capsule">
+                <span>WebSockets</span>
+              </div>
             </div>
-            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-              <h4 style="text-align:left;color:#09203a">Backend &amp; APIs</h4>
-                <p style="text-align:left; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
-                  <img src="https://www.vectorlogo.zone/logos/djangoproject/djangoproject-ar21.svg" alt="Django Logo" height="60">
-                  <img src="https://www.vectorlogo.zone/logos/palletsprojects_flask/palletsprojects_flask-ar21.svg" alt="Flask Logo" height="60">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/FastAPI_logo.svg" alt="FastAPI Logo" height="55">
-                </p>
+          </div>
+        </div>
+
+        <!-- AI / ML & Vector Databases -->
+        <div class="col-md-6 mb-4">
+          <div class="glass-panel skills-card">
+            <h4>AI / ML &amp; Vector Databases</h4>
+            <div class="skills-capsules-grid">
+              <div class="skill-capsule">
+                <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="TensorFlow Logo">
+                <span>TensorFlow</span>
+              </div>
+              <div class="skill-capsule">
+                <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="PyTorch Logo">
+                <span>PyTorch</span>
+              </div>
+              <div class="skill-capsule">
+                <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="OpenCV Logo">
+                <span>OpenCV</span>
+              </div>
+              <div class="skill-capsule">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-Learn Logo">
+                <span>Scikit-Learn</span>
+              </div>
+              <div class="skill-capsule text-only-capsule">
+                <span>Qdrant</span>
+              </div>
+              <div class="skill-capsule text-only-capsule">
+                <span>FAISS</span>
+              </div>
+              <div class="skill-capsule text-only-capsule">
+                <span>LLMs &amp; Agents</span>
+              </div>
+              <div class="skill-capsule text-only-capsule">
+                <span>NLP &amp; CV</span>
+              </div>
             </div>
-            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-              <h4 style="text-align:left;color:#09203a">AI / ML &amp; Vector Databases</h4>
-                <p style="text-align:left;">
-                  <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="TensorFlow Logo" height="60" width="130">
-                  <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-ar21.svg" alt="PyTorch Logo" height="60" width="130">
-                  <img src="https://www.vectorlogo.zone/logos/opencv/opencv-ar21.svg" alt="OpenCV Logo" height="60" width="120">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-Learn Logo" height="50" width="80">
-                  <span style="font-family:'Poppins',sans-serif;font-weight:700;font-size:24px;color:#12d640;margin-left:20px;vertical-align:middle;">Qdrant</span>
-                  <span style="font-family:'Poppins',sans-serif;font-weight:700;font-size:24px;color:#09203a;margin-left:20px;vertical-align:middle;">FAISS</span>
-                </p>
+          </div>
+        </div>
+
+        <!-- Tools & DevOps -->
+        <div class="col-md-6 mb-4">
+          <div class="glass-panel skills-card">
+            <h4>Tools &amp; DevOps</h4>
+            <div class="skills-capsules-grid">
+              <div class="skill-capsule">
+                <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker Logo">
+                <span>Docker</span>
+              </div>
+              <div class="skill-capsule">
+                <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="AWS Logo">
+                <span>AWS</span>
+              </div>
+              <div class="skill-capsule">
+                <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git Logo">
+                <span>Git</span>
+              </div>
+              <div class="skill-capsule">
+                <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman Logo">
+                <span>Postman</span>
+              </div>
+              <div class="skill-capsule text-only-capsule">
+                <span>Celery &amp; Redis</span>
+              </div>
+              <div class="skill-capsule text-only-capsule">
+                <span>Asterisk &amp; SIP</span>
+              </div>
             </div>
-            <div class="col-md-12 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100" style="background:#fff">
-               <h4 style="text-align:left;color:#09203a">Tools &amp; DevOps</h4>
-                 <p style="text-align:left;">
-                   <img src="https://www.vectorlogo.zone/logos/docker/docker-ar21.svg" alt="Docker Logo" height="60" width="130">
-                   <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" alt="AWS Logo" height="60" width="120">
-                   <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git Logo" height="60" width="120">
-                   <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-ar21.svg" alt="Postman Logo" height="60" width="120">
-               </p>
-            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- End Skills Section -->
 
-
-
-
-  <!-- Start Links section -->
-  <section id="links" class="services">
-    <div class="container">
+  <!-- ======= Resume & Repositories Link Section ======= -->
+  <section id="links" class="education" style="padding: 60px 0;">
+    <div class="container" data-aos="fade-up">
       <div class="section-title">
-        <h2>Resume & Links</h2>
+        <h2>Quick Links</h2>
       </div>
       <div class="row">
-        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up" data-aos-delay="100">
-          <a href="https://drive.google.com/file/d/1vVtIALtVN6RyAW3nRjCqM5PrO7Rzhwfh/view?usp=sharing" target="_blank"><div class="icon"><i class="icofont-page"></i></div></a>
-          <h4 class="title"><a href="https://drive.google.com/file/d/1vVtIALtVN6RyAW3nRjCqM5PrO7Rzhwfh/view?usp=sharing" target="_blank">Resume</a></h4>
-          <p class="description" style="color:#fff;">The link contains downloadable resume</p>
+        <div class="col-md-6 mb-4">
+          <div class="glass-panel education-card text-center" style="padding: 25px;">
+            <i class="icofont-page" style="font-size: 40px; color: var(--accent); display: block; margin-bottom: 15px;"></i>
+            <h3>Interactive Resume</h3>
+            <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 20px;">View or download the latest PDF version of my technical resume.</p>
+            <a href="https://drive.google.com/file/d/1vVtIALtVN6RyAW3nRjCqM5PrO7Rzhwfh/view?usp=sharing" target="_blank" class="btn-primary" style="padding: 10px 20px; display: inline-block;">Open Resume</a>
+          </div>
         </div>
-        <div class="col-md-3 mt-4 mt-md-0 icon-box" data-aos="fade-up">
-          <a href="https://leetcode.com/u/sreemurali/" target="_blank"><div class="icon"><i class="icofont-link"></i></div></a>
-          <h4 class="title"><a href="https://leetcode.com/u/sreemurali/" target="_blank">LeetCode Repository</a></h4>
-          <p class="description" style="color:#fff;"> The github repository contains leetcode problems solution in python.</p>
+        <div class="col-md-6 mb-4">
+          <div class="glass-panel education-card text-center" style="padding: 25px;">
+            <i class="icofont-link" style="font-size: 40px; color: var(--accent); display: block; margin-bottom: 15px;"></i>
+            <h3>LeetCode Solutions</h3>
+            <p style="color: var(--text-secondary); font-size: 14px; margin-bottom: 20px;">Github repository and profile documenting code challenges and solutions.</p>
+            <a href="https://leetcode.com/u/sreemurali/" target="_blank" class="btn-primary" style="padding: 10px 20px; display: inline-block;">View Profile</a>
+          </div>
         </div>
-        
       </div>
     </div>
-  </section> <!--End Links Section -->
+  </section>
 
-
-  <!-- Start Contact Section -->
-
+  <!-- ======= Contact Section ======= -->
   <section id="contacts" class="contact">
-    <div class="container">
-
+    <div class="container" data-aos="fade-up">
       <div class="section-title">
         <h2>Contact</h2>
       </div>
 
-      <div class="row mt-2">
+      <div class="contact-wrapper">
+        <div class="contact-pretitle font-mono">05. What's Next?</div>
+        <h3 class="contact-title">Get In Touch</h3>
+        <p class="contact-text">
+          My inbox is always open. Whether you have a backend scalability question, want to talk about AI voice systems, or have a developer opportunity, feel free to reach out. I'll get back to you as soon as possible!
+        </p>
+        <div class="glass-panel contact-form-container" data-aos="fade-up" style="margin-bottom: 60px;">
+          <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="f15ff3a2-b996-484a-a884-09ae67fafcec">
+            <input type="hidden" name="subject" value="New Portfolio Message from Sreemurali Sekar K">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+            <div class="form-row">
+              <div class="form-group col-md-6 text-left">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="John Doe" required>
+              </div>
+              <div class="form-group col-md-6 text-left">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="john@example.com" required>
+              </div>
+            </div>
+            
+            <div class="form-group text-left">
+              <label for="message" class="form-label">Message</label>
+              <textarea name="message" id="message" rows="5" class="form-control" placeholder="Your message here..." required></textarea>
+            </div>
 
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-map"></i>
-            <h3>My Address</h3>
-            <p>14/401 Policeman Street</p>
-            <p>Kalarampatti,</p>
-            <p>Salem, Tamil Nadu.</p>
-          </div>
+            <button type="submit" class="submit-btn" id="submit-btn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-spinner hidden"><i class="bx bx-loader-alt bx-spin"></i></span>
+            </button>
+
+            <div id="form-status" class="form-status hidden"></div>
+          </form>
         </div>
 
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
-            <h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/sreemurali-sekar-k-84630517a/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://www.github.com/Sreemurali1" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="mailto:sreemuralislm@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
+        <div class="contact-info-grid">
+          <!-- Address -->
+          <div class="glass-panel contact-info-card">
+            <i class="bx bx-map"></i>
+            <div>
+              <h4>Location</h4>
+              <p>14/401 Policeman Street, Kalarampatti,</p>
+              <p>Salem, Tamil Nadu, India</p>
+            </div>
+          </div>
 
+          <!-- Social Profiles -->
+          <div class="glass-panel contact-info-card">
+            <i class="bx bx-share-alt"></i>
+            <div>
+              <h4>Social Profiles</h4>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/sreemurali-sekar-k-84630517a/" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.github.com/Sreemurali1" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+                <a href="mailto:sreemuralislm@gmail.com" class="email"><i class="bx bxl-google"></i></a>
+                <a href="https://leetcode.com/u/sreemurali/" target="_blank" class="leetcode">
+                  <img src="assets/img/leetcode-svgrepo-com.svg" alt="LeetCode" width="16" height="16" style="filter: invert(1); vertical-align: middle;">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="glass-panel contact-info-card">
+            <i class="bx bx-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:sreemuralislm@gmail.com">sreemuralislm@gmail.com</a></p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="glass-panel contact-info-card">
+            <i class="bx bx-phone-call"></i>
+            <div>
+              <h4>Contact</h4>
+              <p>+91 7448810289</p>
             </div>
           </div>
         </div>
-
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
-            <h3>Email</h3>
-            <p>sreemuralislm@gmail.com</p>
-          </div>
-        </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
-            <h3>Contact</h3>
-            <p>+91 7448810289</p>
-          </div>
-        </div>
       </div>
-      <!-- <div id="sfczmlqxr5caww28rswrt8849ghbekgnh3j" ></div><script type="text/javascript" src="https://counter1.stat.ovh/private/counter.js?c=zmlqxr5caww28rswrt8849ghbekgnh3j&down=async" async></script><noscript><a href="https://www.freecounterstat.com" title="free web counter"><img src="https://counter1.stat.ovh/private/freecounterstat.php?c=zmlqxr5caww28rswrt8849ghbekgnh3j" border="0" title="free web counter" alt="free web counter" style="visibility: none;"></a></noscript> -->
     </div>
   </section>
-
   <!-- End Contact Section -->
 
   <!-- Vendor JS Files -->
@@ -751,7 +1033,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>

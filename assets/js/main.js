@@ -1,67 +1,46 @@
 /**
-* Template Name: Personal - v2.1.0
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Sreemurali Sekar K - Portfolio Redesign Script
+* Theme: Slate & Teal (Premium Developer)
+* Layout: Single-Page Vertically Scrolling
 */
 !(function($) {
   "use strict";
 
-  // Nav Menu
-  $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var hash = this.hash;
-      var target = $(hash);
-      if (target.length) {
-        e.preventDefault();
-
-        if ($(this).parents('.nav-menu, .mobile-nav').length) {
-          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-          $(this).closest('li').addClass('active');
-        }
-
-        if (hash == '#header') {
-          $('#header').removeClass('header-top');
-          $("section").removeClass('section-show');
-          return;
-        }
-
-        if (!$('#header').hasClass('header-top')) {
-          $('#header').addClass('header-top');
-          setTimeout(function() {
-            $("section").removeClass('section-show');
-            $(hash).addClass('section-show');
-          }, 350);
-        } else {
-          $("section").removeClass('section-show');
-          $(hash).addClass('section-show');
-        }
-
-        if ($('body').hasClass('mobile-nav-active')) {
-          $('body').removeClass('mobile-nav-active');
-          $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
-          $('.mobile-nav-overly').fadeOut();
-        }
-
-        return false;
-
-      }
+  // Toggle .header-scrolled class to #header when page is scrolled
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('#header').addClass('header-scrolled');
+    } else {
+      $('#header').removeClass('header-scrolled');
     }
   });
 
-  // Activate/show sections on load with hash links
-  if (window.location.hash) {
-    var initial_nav = window.location.hash;
-    if ($(initial_nav).length) {
-      $('#header').addClass('header-top');
-      $('.nav-menu .active, .mobile-nav .active').removeClass('active');
-      $('.nav-menu, .mobile-nav').find('a[href="' + initial_nav + '"]').parent('li').addClass('active');
-      setTimeout(function() {
-        $("section").removeClass('section-show');
-        $(initial_nav).addClass('section-show');
-      }, 350);
-    }
+  if ($(window).scrollTop() > 100) {
+    $('#header').addClass('header-scrolled');
   }
+
+  // Navigation active state on scroll (ScrollSpy)
+  var nav_sections = $('section');
+  var main_nav = $('.nav-menu, .mobile-nav');
+
+  $(window).on('scroll', function() {
+    var cur_pos = $(this).scrollTop() + 200;
+
+    nav_sections.each(function() {
+      var top = $(this).offset().top,
+          bottom = top + $(this).outerHeight();
+
+      if (cur_pos >= top && cur_pos <= bottom) {
+        if (cur_pos <= bottom) {
+          main_nav.find('li').removeClass('active');
+        }
+        main_nav.find('a[href="#' + $(this).attr('id') + '"]').parent('li').addClass('active');
+      }
+      if (cur_pos < 300) {
+        $(".nav-menu ul:first li:first, .mobile-nav ul:first li:first").addClass('active');
+      }
+    });
+  });
 
   // Mobile Navigation
   if ($('.nav-menu').length) {
@@ -88,9 +67,32 @@
         }
       }
     });
-  } else if ($(".mobile-nav, .mobile-nav-toggle").length) {
-    $(".mobile-nav, .mobile-nav-toggle").hide();
   }
+
+  // Close mobile navigation on click
+  $(document).on('click', '.mobile-nav a', function(e) {
+    if ($('body').hasClass('mobile-nav-active')) {
+      $('body').removeClass('mobile-nav-active');
+      $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
+      $('.mobile-nav-overly').fadeOut();
+    }
+  });
+
+  // Smooth scroll behavior fallback for clicks
+  $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var hash = this.hash;
+      var target = $(hash);
+      if (target.length) {
+        // Let the browser handle standard anchor behavior.
+        // Update active class
+        if ($(this).parents('.nav-menu, .mobile-nav').length) {
+          $('.nav-menu .active, .mobile-nav .active').removeClass('active');
+          $(this).closest('li').addClass('active');
+        }
+      }
+    }
+  });
 
   // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
@@ -125,7 +127,7 @@
     }
   });
 
-  // Porfolio isotope and filter
+  // Portfolio isotope and filter
   $(window).on('load', function() {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item',
@@ -140,12 +142,70 @@
         filter: $(this).data('filter')
       });
     });
-
   });
 
-  // Initiate venobox (lightbox feature used in portofilo)
+  // Initiate venobox (lightbox feature used in portfolio)
   $(document).ready(function() {
     $('.venobox').venobox();
+  });
+
+  // Web3Forms AJAX contact form submission
+  $('#contact-form').on('submit', function(e) {
+    e.preventDefault();
+    
+    var $form = $(this);
+    var $submitBtn = $('#submit-btn');
+    var $btnText = $submitBtn.find('.btn-text');
+    var $btnSpinner = $submitBtn.find('.btn-spinner');
+    var $statusMsg = $('#form-status');
+    
+    // Reset status
+    $statusMsg.addClass('hidden').removeClass('success error').text('');
+    
+    // Disable submit button and show spinner
+    $submitBtn.prop('disabled', true);
+    $btnText.text('Sending...');
+    $btnSpinner.removeClass('hidden');
+    
+    // Serialize data
+    var formData = new FormData(this);
+    
+    // Convert to JSON object for Web3Forms API
+    var object = {};
+    formData.forEach(function(value, key){
+        object[key] = value;
+    });
+    var json = JSON.stringify(object);
+    
+    // Submit via AJAX
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: json
+    })
+    .then(async function(response) {
+      var jsonRes = await response.json();
+      if (response.status == 200) {
+        $statusMsg.addClass('success').removeClass('hidden').text('Thank you! Your message has been sent successfully.');
+        $form[0].reset();
+      } else {
+        console.log(response);
+        $statusMsg.addClass('error').removeClass('hidden').text(jsonRes.message || 'Something went wrong. Please try again later.');
+      }
+    })
+    .catch(function(error) {
+      console.log(error);
+      $statusMsg.addClass('error').removeClass('hidden').text('Failed to send message. Please check your connection and try again.');
+    })
+    .finally(function() {
+      // Re-enable submit button
+      $submitBtn.prop('disabled', false);
+      $btnText.text('Send Message');
+      $btnSpinner.addClass('hidden');
+    });
   });
 
 })(jQuery);
